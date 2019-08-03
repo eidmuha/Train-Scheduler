@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- font auswome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- External CSS -->
     <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -42,7 +45,7 @@
                             <th scope="col">Frequency (min)</th>
                             <th scope="col">Next Arrival</th>
                             <th scope="col">Minutes Away</th>
-                            <!-- <th scope="col">Action</th> -->
+                            <th scope="col">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -53,27 +56,29 @@
             </div>
         </div>
 
+        
+
         <!-- Card provides form to enter train shedule -->
         <div class="card mb-3 border-primaryn">
             <div class="card-header bg-primary text-white text-center">
                 <b>Add Train</b>
             </div>
-            <form name="frm" class="m-2">
+            <form name="frm" id="apply-form" class="m-2">
                 <div class="form-group">
                     <label for="inputTrainName">Train Name</label>
-                    <input type="Text" class="form-control" id="inputTrainName" placeholder="Enter Train Name" required>
+                    <input type="Text" class="form-control" id="inputTrainName" placeholder="Enter Train Name" required />
                 </div>
                 <div class="form-group">
                     <label for="inputDest">Destination</label>
-                    <input type="Text" class="form-control" id="inputDest" placeholder="Destination" required>
+                    <input type="Text" class="form-control" id="inputDest" placeholder="Destination" required />
                 </div>
                 <div class="form-group">
                     <label for="inputTranTime">First Train Time (HH:mm)</label>
-                    <input type="Text" class="form-control" id="inputTranTime" placeholder="train time" required>
+                    <input type="Text" class="form-control" id="inputTranTime" placeholder="train time" required />
                 </div>
                 <div class="form-group">
                     <label for="inputFrequency">Frequency (min)</label>
-                    <input type="Text" class="form-control" id="inputFrequency" placeholder="Destination" required>
+                    <input type="Text" class="form-control" id="inputFrequency" placeholder="Destination" required />
                 </div>
                 <button  id="submitBtn" type="submit" class="btn btn-primary">Submit</button>
             </form>
