@@ -1,9 +1,10 @@
-body {
-  font-family: "Arvo";
+body{
+    font-family: "Arvo";
 }
-.container {
-  width: 70%;
+.container{
+    width: 70%;
 }
-.jumbotron {
-  background-color: #8b4513;
+.jumbotron{
+    background-color:#8B4513;
+
 }
